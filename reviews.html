@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Отзывы | Ресторан Венеция</title>
+  <link rel="stylesheet" href="./styles/app.css">
+  <link rel="stylesheet" href="./styles/reviews.css">
+</head>
+<body>
+  <header>
+    <div class="container header-container">
+      <h1>Венеция</h1>
+      <input type="checkbox" id="menu-toggle">
+      <label class="burger" for="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <nav id="navMenu">
+        <a href="index.html">Главная</a>
+        <a href="menu.html">Меню</a>
+        <a href="gallery.html">Галерея</a>
+        <a href="reviews.html" class="active">Отзывы</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section-container">
+      <div class="container">
+        <h2>Отзывы наших гостей</h2>
+        <div class="reviews-grid">
+          <div class="review-card">
+            <h3>Анна С.</h3>
+            <p class="date">12 мая 2025</p>
+            <p class="rating">⭐⭐⭐⭐⭐</p>
+            <p>Уютное место с потрясающей атмосферой! Особенно понравилась паста с трюфелями и живая музыка вечером. Обязательно вернусь!</p>
+          </div>
+          <div class="review-card">
+            <h3>Игорь П.</h3>
+            <p class="date">8 мая 2025</p>
+            <p class="rating">⭐⭐⭐⭐</p>
+            <p>Хорошее обслуживание, вкусная еда. Немного пришлось подождать заказ, но в целом впечатления положительные.</p>
+          </div>
+          <div class="review-card">
+            <h3>Марина К.</h3>
+            <p class="date">3 мая 2025</p>
+            <p class="rating">⭐⭐⭐⭐⭐</p>
+            <p>Отмечали день рождения — всё было на высшем уровне. Очень атмосферно, персонал внимательный. Спасибо!</p>
+          </div>
+          <div class="review-card">
+            <h3>Александр В.</h3>
+            <p class="date">30 апреля 2025</p>
+            <p class="rating">⭐⭐⭐⭐⭐</p>
+            <p>Лучший ресторан в городе. Шикарное меню, красивые интерьеры, хорошая винная карта. Рекомендую!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-container">
+      <div class="container">
+        <h2>Оставить отзыв</h2>
+        <form class="review-form">
+          <div class="form-group">
+            <label for="name">Ваше имя</label>
+            <input type="text" id="name" required>
+          </div>
+          <div class="form-group">
+            <label for="rating">Оценка</label>
+            <select id="rating" required>
+              <option value="">Выберите</option>
+              <option value="5">5 — Отлично</option>
+              <option value="4">4 — Хорошо</option>
+              <option value="3">3 — Удовлетворительно</option>
+              <option value="2">2 — Плохо</option>
+              <option value="1">1 — Ужасно</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="review">Отзыв</label>
+            <textarea id="review" rows="5" required></textarea>
+          </div>
+          <button type="submit">Отправить отзыв</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Ресторан Венеция. Все права защищены.</p>
+      <p>
+        <a href="#">Instagram</a> |
+        <a href="#">VK</a> |
+        <a href="#">Telegram</a>
+      </p>
+      <p>ИП Смирнов Алексей Игоревич, ИНН 7723456789, ОГРНИП 319774600123456</p>
+    </div>
+  </footer>
+</body>
+</html>

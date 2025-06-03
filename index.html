@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Венеция | Ресторан европейской кухни</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  >
+  <link rel="stylesheet" href="./styles/app.css">
+  <link rel="stylesheet" href="./styles/index.css">
+</head>
+<body>
+  <header>
+    <div class="container header-container">
+      <h1>Венеция</h1>
+      <input type="checkbox" id="menu-toggle">
+      <label class="burger" for="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <nav id="navMenu">
+        <a href="#" class="active">Главная</a>
+        <a href="menu.html">Меню</a>
+        <a href="gallery.html">Галерея</a>
+        <a href="reviews.html">Отзывы</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-section">
+      <div class="hero-container container">
+        <h2>Вкус Европы в центре города</h2>
+        <p>Изящная атмосфера, живая музыка и авторская кухня</p>
+        <a href="contacts.html#form"><button class="bold">Забронировать столик</button></a>
+      </div>
+    </section>
+    
+    <section id="about-us">
+      <div class="container">
+        <h3>О нас</h3>
+        <p>Ресторан "Венеция" был основан в 2010 году и с тех пор стал знаковым местом для ценителей европейской кухни. Мы находимся в самом сердце города и ежедневно радуем гостей разнообразным меню, уютной атмосферой и высоким уровнем обслуживания. Наша миссия — дарить людям гастрономическое удовольствие в сочетании с комфортом и заботой.</p>
+        <p>Мы гордимся тем, что многие из наших гостей становятся постоянными клиентами, приводят друзей, отмечают у нас семейные события и деловые встречи. В интерьере ресторана сочетаются классические элементы венецианского стиля с современными дизайнерскими решениями. Тёплый свет, живая музыка по выходным и аромат свежеприготовленных блюд создают атмосферу, к которой хочется возвращаться снова и снова.</p>
+      </div>
+    </section>
+    
+    <section id="features">
+      <div class="container">
+        <h3>Почему выбирают нас</h3>
+        <div class="features-grid">
+          <div class="feature-card">
+            <img src="./assets/images/kitchen.jpg" alt="Изысканная кухня" >
+            <h4><i class="fas fa-drumstick-bite"></i> Изысканная кухня</h4>
+            <p>Команда профессиональных поваров создает гастрономические шедевры, вдохновлённые лучшими европейскими традициями.</p>
+          </div>
+          <div class="feature-card">
+            <img src="./assets/images/kitchen.jpg" alt="Живая музыка" >
+            <h4><i class="fas fa-music"></i> Живая музыка</h4>
+            <p>По выходным звучит живая музыка — от джаза до классики. Атмосфера уюта и вдохновения гарантирована.</p>
+          </div>
+          <div class="feature-card">
+            <img src="./assets/images/kitchen.jpg" alt="VIP-зал" >
+            <h4><i class="fas fa-couch"></i> VIP-зал</h4>
+            <p>Уединённая обстановка, персональный сервис и индивидуальное меню — для тех, кто ценит приватность и комфорт.</p>
+          </div>
+          <div class="feature-card">
+            <img src="./assets/images/kitchen.jpg" alt="Банкеты и мероприятия" >
+            <h4><i class="fas fa-glass-cheers"></i> Банкеты и мероприятия</h4>
+            <p>Мы организуем мероприятия любого уровня сложности — с продуманным меню, оформлением и развлечениями.</p>
+          </div>
+        </div>
+      </div>
+    </section>  
+    <section id="team">
+      <div class="container">
+        <h3>Наша команда</h3>
+        <p>Шеф-повар ресторана, Александр Карпов, имеет более 20 лет опыта в лучших европейских заведениях. Его страсть — превращать классические рецепты в современные произведения искусства. Вместе с ним работает команда поваров, официантов и сомелье, каждый из которых прошёл обучение и постоянно повышает свою квалификацию.</p>
+        <p>Мы уверены, что именно люди делают ресторан по-настоящему особенным, и поэтому вкладываем в команду не меньше, чем в кухню и интерьер.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h3 class="center">Наше меню</h3>
+        <div class="menu-grid" id="menuGrid">
+          <div class="menu-item" data-category="Салаты,Закуски">
+            <img src="./assets/images/kitchen.jpg" alt="Греческий салат">
+            <h4>Греческий салат</h4>
+            <p>Свежие овощи, маслины, фета и оливковое масло.</p>
+            <p class="price"><strong>420 ₽</strong></p>
+          </div>
+          <div class="menu-item" data-category="Салаты,Закуски">
+            <img src="./assets/images/kitchen.jpg" alt="Цезарь с курицей">
+            <h4>Цезарь с курицей</h4>
+            <p>Салат с курицей, айсбергом, соусом Цезарь и пармезаном.</p>
+            <p class="price"><strong>480 ₽</strong></p>
+          </div>
+          <div class="menu-item" data-category="Супы,Горячее">
+            <img src="./assets/images/kitchen.jpg" alt="Французский луковый суп">
+            <h4>Французский луковый суп</h4>
+            <p>Суп с карамелизированным луком и сырной гренкой.</p>
+            <p class="price"><strong>390 ₽</strong></p>
+          </div>
+          <div class="menu-item" data-category="Супы,Вегетарианские">
+            <img src="./assets/images/kitchen.jpg" alt="Минестроне">
+            <h4>Минестроне</h4>
+            <p>Овощной итальянский суп с травами и пастой.</p>
+            <p class="price"><strong>380 ₽</strong></p>
+          </div>
+          <div class="menu-item" data-category="Паста,Горячее">
+            <img src="./assets/images/kitchen.jpg" alt="Паста Карбонара">
+            <h4>Паста Карбонара</h4>
+            <p>Паста с беконом, сливочным соусом и сыром пармезан.</p>
+            <p class="price"><strong>530 ₽</strong></p>
+          </div>
+          <div class="menu-item" data-category="Пицца,Закуски">
+            <img src="./assets/images/kitchen.jpg" alt="Пицца Маргарита">
+            <h4>Пицца Маргарита</h4>
+            <p>Классическая пицца с томатным соусом, базиликом и моцареллой.</p>
+            <p class="price"><strong>490 ₽</strong></p>
+          </div>
+          <div class="menu-item" data-category="Десерты">
+            <img src="./assets/images/kitchen.jpg" alt="Тирамису">
+            <h4>Тирамису</h4>
+            <p>Классический итальянский десерт с маскарпоне и кофе.</p>
+            <p class="price"><strong>370 ₽</strong></p>
+          </div>
+          <div class="last-menu-item">
+            <div class="menu-item more-btn" data-category="Напитки,Безалкогольные">
+              <img src="./assets/images/kitchen.jpg" alt="Мохито безалкогольный">
+              <h4>Мохито безалкогольный</h4>
+              <p>Освежающий напиток с лаймом, мятой и содовой.</p>
+              <p class="price"><strong>250 ₽</strong></p>
+              <div class="more-background"></div>
+              <a href="./menu.html">Посмотреть еще</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Ресторан Венеция. Все права защищены.</p>
+      <p>
+        <a href="#"><i class="fab fa-instagram"></i> Instagram</a> |
+        <a href="#"><i class="fab fa-vk"></i> VK</a> |
+        <a href="#"><i class="fab fa-telegram"></i> Telegram</a>
+      </p>
+      <p>ИП Смирнов Алексей Игоревич, ИНН 7723456789, ОГРНИП 319774600123456</p>
+    </div>
+  </footer>
+</body>
+</html>

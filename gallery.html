@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Галерея | Ресторан Венеция</title>
+  <link rel="stylesheet" href="./styles/app.css">
+  <link rel="stylesheet" href="./styles/gallery.css">
+</head>
+<body>
+  <header>
+    <div class="container header-container">
+      <h1>Венеция</h1>
+      <input type="checkbox" id="menu-toggle">
+      <label class="burger" for="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <nav id="navMenu">
+        <a href="index.html">Главная</a>
+        <a href="menu.html">Меню</a>
+        <a href="gallery.html" class="active">Галерея</a>
+        <a href="reviews.html">Отзывы</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section-container">
+      <div class="container">
+        <h2>Галерея ресторана</h2>
+        <p>Ознакомьтесь с атмосферой, интерьером и подачей блюд ресторана «Венеция». Все фотографии отражают нашу любовь к деталям и европейской эстетике.</p>
+
+        <!-- Фильтры -->
+        <!-- <div class="gallery-filters">
+          <button class="filter-btn active" data-filter="all">Все</button>
+          <button class="filter-btn" data-filter="interior">Интерьер</button>
+          <button class="filter-btn" data-filter="kitchen">Кухня</button>
+          <button class="filter-btn" data-filter="events">События</button>
+        </div> -->
+
+        <div class="gallery-grid">
+            <img src="./assets/images/kitchen.jpg" alt="Интерьер 1">
+            <img src="./assets/images/img.jpg" alt="Блюдо 1">
+            <img src="./assets/images/kitchen.jpg" alt="Событие 1">
+            <img src="./assets/images/img.jpg" alt="Событие 1">
+            <img src="./assets/images/kitchen.jpg" alt="Интерьер 2" class="gallery-item--large">
+            <img src="./assets/images/img.jpg" alt="Блюдо 2">
+            <img src="./assets/images/kitchen.jpg" alt="Событие 1">
+            <img src="./assets/images/img.jpg" alt="Событие 2" class="gallery-item--large">
+            <img src="./assets/images/kitchen.jpg" alt="Шеф за работой">
+            <img src="./assets/images/img.jpg" alt="Барная зона" >
+            <img src="./assets/images/kitchen.jpg" alt="Десерт">
+            <img src="./assets/images/img.jpg" alt="Живая музыка">
+            <img src="./assets/images/kitchen.jpg" alt="Событие 1">
+            <img src="./assets/images/img.jpg" alt="Событие 1">
+          </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-img" src="" alt="">
+
+    <div class="lightbox-zone left-zone"></div>
+    <div class="lightbox-zone right-zone"></div>
+
+    <div class="lightbox-controls">
+      <span class="prev">&#10094;</span>
+      <span class="next">&#10095;</span>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Ресторан Венеция. Все права защищены.</p>
+      <p><a href="#">Instagram</a> |
+        <a href="#">VK</a> |
+        <a href="#">Telegram</a></p>
+      <p>ИП Смирнов Алексей Игоревич, ИНН 7723456789, ОГРНИП 319774600123456</p>
+    </div>
+  </footer>
+
+  <script src="./scripts/gallery.js"></script>
+</body>
+</html>

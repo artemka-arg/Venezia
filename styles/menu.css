@@ -1,0 +1,51 @@
+.filters {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.filters .filter-btn {
+  background: none;
+  border: 2px solid #ffbf31;
+  color: #ffbf31;
+  margin: 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.filters .filter-btn:hover,
+.filters .filter-btn.active {
+  background-color: #ffbf31;
+  color: #121212;
+}
+
+.menu-item {
+display: none;
+}
+
+.menu-item.visible {
+  display: flex;
+}
+
+.show-more-container {
+  text-align: center;
+  margin: 30px 0;
+}
+
+#show-more {
+  background-color: #ffbf31;
+  color: #222;
+  border: none;
+  padding: 10px 25px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+#show-more:hover {
+  background-color: #e0a91c;
+}
